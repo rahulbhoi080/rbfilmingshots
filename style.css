@@ -1,0 +1,348 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 5px 0;
+}
+
+.LOGO {
+    height: 20%;
+    text-align: center;
+    max-width: 40%;
+    font-weight: bold;
+    padding: -10px;
+}
+
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navigation Styling */
+nav {
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex; /* Horizontal Layout */
+    justify-content: center; /* Center the items horizontally */
+    gap: 30px; /* Add space between items */
+}
+
+.nav-links li {
+    padding: 5px 10px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #007bff;
+}
+
+/* Hamburger Menu Styles (for mobile) */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+    background-color: transparent;
+}
+
+.hamburger .bar {
+    width: 30px;
+    height: 4px;
+    background-color: #fff;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide nav links by default on mobile */
+        flex-direction: column; /* Stack links vertically */
+        gap: 20px; /* Add space between items */
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .nav-links.active {
+        display: flex; /* Show nav links when active */
+    }
+
+    .hamburger {
+        display: flex; /* Show hamburger on mobile */
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+}
+
+
+
+.hero {
+    background: linear-gradient(to right, #2b5876, #4e4376);
+    background-image: src="Images\Banner V1.jpg";
+    
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+
+.btn-primary {
+    background-color: #ff7b54;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.services {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+}
+
+.services h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.service-item {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Portfolio Gallery Styles */
+.portfolio-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.portfolio-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.portfolio-box {
+    flex: 1;
+    max-width: calc(25% - 20px);
+    height: 150px;
+    background-color: #ddd;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.PIC {
+    height: 150px;
+}
+
+.contact {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+}
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact form input, .contact form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact form button {
+    background-color: #ff7b54;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.site-footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.about-section {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.about-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.about-content {
+    max-width: 600px;
+}
+
+.about-content h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.about-content p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/*footer social media */
+.social-media-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.icon img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.icon img:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+
+.icon {
+    display: inline-block;
+}
+
+/* Positioning and styling the call button */
+.call-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    z-index: 1000;
+}
+
+.call-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .call-button {
+        font-size: 14px;
+        padding: 8px 16px;
+        top: 10px;
+        right: 10px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .services h2,
+    .about-content h2,
+    .contact h2 {
+        font-size: 24px;
+    }
+
+    .portfolio-row {
+        flex-direction: column;
+    }
+
+    .portfolio-box {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-content {
+        max-width: 100%;
+    }
+
+    .contact form {
+        max-width: 100%;
+    }
+}
